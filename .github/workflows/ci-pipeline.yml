@@ -24,6 +24,11 @@ jobs:
       - name: Run tests
         run: |
           python -m pytest
+
+      - name: Execute calculator.py
+        run: |
+          python calculator.py
+      
       - name: Build Docker image
         if: success()
         run: |
